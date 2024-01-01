@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4">Welcome to Your Patient-Doctor System</h1>
+    <p class="lead">Efficient and Reliable Healthcare Management</p>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-4">
+            <a href="@Url.Action("Index", "Patients")" class="btn btn-primary btn-lg btn-block mb-3">Patients</a>
+        </div>
+        <div class="col-md-4">
+            <a href="@Url.Action("Index", "Doctors")" class="btn btn-success btn-lg btn-block mb-3">Doctors</a>
+        </div>
+        <div class="col-md-4">
+            <a href="@Url.Action("Index", "Appointments")" class="btn btn-info btn-lg btn-block mb-3">Appointments</a>
+        </div>
+    </div>
+</div>
